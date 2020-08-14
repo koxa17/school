@@ -32,6 +32,17 @@ a:hover {
   color: inherit;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 /* -----------------------------------------------------
 
                     SIDEBAR
@@ -79,21 +90,33 @@ a:hover {
   font-size: 1.2rem;
   color: #b4b9bf;
   font-weight: bold;
-  margin-bottom: 15px;
 }
 
-.menu__item span.line {
-  width: 10px;
-  height: 1px;
-  display: inline-block;
-  border-radius: 50%;
-  background: #dad7c5;
-  opacity: 0;
+.menu__item a {
+  padding-left: 20px;
 }
 
-.menu__item:hover > span.line {
-  opacity: 1;
+.menu__item:not(:first-child) {
+  border-top: 1px solid gray;
 }
+
+.menu__item:hover {
+  background: rgb(252, 117, 39);
+  cursor: pointer;
+  color: #fff;
+}
+
+.menu__title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #bbb9bf;
+}
+
+/* -----------------------------------------------------
+
+                    MAIN
+
+ -------------------------------------------------------*/
 
 .main {
   width: 100%;
@@ -102,14 +125,8 @@ a:hover {
   /* border-bottom-left-radius: 10px; */
 }
 
-.main-top {
+.top {
   border-bottom: 1px solid #f5f5f5;
-}
-
-.menu__title {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-  color: #bbb9bf;
 }
 
 .teacher .teacher__avatar {
@@ -137,6 +154,42 @@ a:hover {
   border-bottom: 1px dotted #bdbdbd;
 }
 
+.back-to-lessons {
+  background: #f1f4fb;
+}
+
+.lessons {
+  background: #f5f56a;
+}
+
+/* -----------------------------------------------------
+
+                    COURSE
+
+ -------------------------------------------------------*/
+
 .course {
   background: #fff;
+}
+
+.link-to-current-lesson {
+  border-bottom: 1px solid transparent;
+}
+
+.link-to-current-lesson > a {
+  color: blue;
+  font-style: italic;
+}
+
+.link-to-current-lesson:hover {
+  border-bottom: 1px solid #3fc5f0;
+}
+
+.lessons-passed {
+  font-size: 1.1rem;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 15px;
 }
