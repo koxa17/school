@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -----------------------------------------------------
+
+                    HEADER
+
+ -------------------------------------------------------*/
+
+.header {
+  background: rgb(218, 216, 216);
+  background-image: url('../img/header/corp-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-top {
+  background: #c84fbb;
+  color: white;
+  padding: 5px 0;
+  max-height: 50px;
+  font-weight: bold;
+}
+
+.header__logo {
+  margin-right: 50px;
+  font-size: 2rem;
+  text-shadow: 1px 3px 2px #000000;
+}
+
+.menu {
+  list-style: none;
+  font-size: 1.1rem;
+}
+
+.menu .menu__item {
+  border: 1px solid #a840f86a;
+  border-radius: 10px;
+  padding: 5px 12px;
+}
+
+.menu .menu__item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.menu__item:hover {
+  border-color: #a840f8;
+  cursor: pointer;
+}
+
+.menu__item:hover > a {
+  border-bottom: 1px solid #fff;
+}
+
+.header__phone {
+  font-size: 0.9rem;
+  margin-right: 40px;
+}
+
+.header__phone span:not(:last-child) {
+  margin-right: 10px;
+}
+
+.header__phone a:hover {
+  text-decoration: underline;
+}
+
+.header__phone .fas {
+  margin-right: 5px;
+}
+
+.header__login button.btn-login {
+  border: none;
+  background: none;
+  color: inherit;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.header__login button .fas {
+  margin-right: 5px;
+}
+
+/* -----------------------------------------------------
+
+                    HEADER -- CONTENT
+
+ -------------------------------------------------------*/
+
+.header-content {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header-content__info {
+}
+
+.header-content__video {
+  max-width: 600px;
+}
+
+.header-content__wrapper-title {
+  margin-right: 15px;
+}
