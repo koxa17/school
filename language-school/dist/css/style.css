@@ -11,11 +11,19 @@ html {
 body {
   margin: 0;
   padding: 0;
+  /* background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 18%,
+    rgba(129, 194, 250, 1) 84%
+  ); */
+  background: rgb(204, 204, 204);
 }
 
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 a,
@@ -26,106 +34,109 @@ a:hover {
 
 /* -----------------------------------------------------
 
-                    HEADER
+                    SIDEBAR
 
  -------------------------------------------------------*/
 
-.header {
-  background: rgb(218, 216, 216);
-  background-image: url('../img/header/corp-bg.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
+.sidebar {
+  height: 100%;
+  width: 100%;
+  color: #000;
 }
 
-.header-top {
-  background: #c84fbb;
-  color: white;
-  padding: 5px 0;
-  max-height: 50px;
-  font-weight: bold;
+.sidebar-top {
+  background: #fff;
+  border-top-right-radius: 10px;
+  /* border-bottom-right-radius: 10px; */
 }
 
-.header__logo {
-  margin-right: 50px;
-  font-size: 2rem;
-  text-shadow: 1px 3px 2px #000000;
+.sidebar-logo {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sidebar-top .fa-user-circle {
+  font-size: 1.7rem;
+}
+
+.user {
+  background: #fff;
+}
+
+.user__name {
+  font-size: 1.2rem;
+}
+
+.user__avatar > img {
+  width: 75px;
+  border-radius: 50%;
+}
+
+.navigation {
+  background: #fff;
 }
 
 .menu {
-  list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
+  color: #b4b9bf;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
-.menu .menu__item {
-  border: 1px solid #a840f86a;
-  border-radius: 10px;
-  padding: 5px 12px;
+.menu__item span.line {
+  width: 10px;
+  height: 1px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #dad7c5;
+  opacity: 0;
 }
 
-.menu .menu__item:not(:last-child) {
-  margin-right: 20px;
+.menu__item:hover > span.line {
+  opacity: 1;
 }
 
-.menu__item:hover {
-  border-color: #a840f8;
-  cursor: pointer;
+.main {
+  width: 100%;
+  background: #fff;
+  border-top-left-radius: 10px;
+  /* border-bottom-left-radius: 10px; */
 }
 
-.menu__item:hover > a {
-  border-bottom: 1px solid #fff;
+.main-top {
+  border-bottom: 1px solid #f5f5f5;
 }
 
-.header__phone {
+.menu__title {
   font-size: 0.9rem;
-  margin-right: 40px;
-}
-
-.header__phone span:not(:last-child) {
-  margin-right: 10px;
-}
-
-.header__phone a:hover {
-  text-decoration: underline;
-}
-
-.header__phone .fas {
-  margin-right: 5px;
-}
-
-.header__login button.btn-login {
-  border: none;
-  background: none;
-  color: inherit;
-  font-size: 1.1rem;
   text-transform: uppercase;
+  color: #bbb9bf;
 }
 
-.header__login button .fas {
-  margin-right: 5px;
+.teacher .teacher__avatar {
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.teacher .teacher__avatar .fa-user-graduate {
+  font-size: 1.7rem;
+  padding: 10px;
 }
 
-/* -----------------------------------------------------
-
-                    HEADER -- CONTENT
-
- -------------------------------------------------------*/
-
-.header-content {
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
+.teacher__link {
+  color: #bdbdbd;
 }
 
-.header-content__info {
+.link__list span.circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #bdbdbd;
+  border-radius: 50%;
 }
 
-.header-content__video {
-  max-width: 600px;
+.link__item {
+  border-bottom: 1px dotted #bdbdbd;
 }
 
-.header-content__wrapper-title {
-  margin-right: 15px;
+.course {
+  background: #fff;
 }
